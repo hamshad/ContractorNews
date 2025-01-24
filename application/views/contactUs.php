@@ -38,10 +38,18 @@
         </form>
         <script type="application/ld+json">
           {
-            "@context": "https://schema.org",
-            "@type": "NewsMediaOrganization",
-            "name": "<?php echo $this->config->item('site_name'); ?>",
-            "url": "<?php echo base_url(); ?>"
+            "@context": "http://schema.org",
+            "@type": "WebPage",
+            "name": "Contact Us",
+            "description": "Contact us here.",
+            "url": "",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "xpath": [
+                "/html/head/title",
+                "/html/head/meta[@name='description']/@content"
+              ]
+            }
           }
         </script>
       </div>

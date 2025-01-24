@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -105,6 +105,9 @@ $route['list/subscriber'] = "User/ListOfSubscriber";
 $route['deletesubscriber'] = "Article/deletesubscriber";
 
 
+$route['aboutus'] = "Home/aboutUs";
+$route['contactus'] = "Home/contactUs";
+
 
 //
 $route['search'] = "Home/loadSearchPage";
@@ -116,5 +119,3 @@ $route['calendar-event'] = "Home/loadAllActiveCalendarEvents";
 $route['getEventData/(:any)'] = 'Home/getEventDataFromEventId';
 
 $route['feed'] = "Home/feed";
-
-

@@ -89,7 +89,8 @@ class Home extends BaseController
     $data["links"] = $this->pagination->create_links();
     $data['student'] = $this->home_model->get_Search_Articles($config["per_page"], $page, $getData);
 
-    $data['search_data'] = !empty($getData) ? $getData : "";
+    // $data['search_data'] = !empty($getData) ? $getData : "";
+    $data['search_data'] = $getData;
     $this->load->view('includes/header_web');
     $this->load->view('search', ["data" => $data]);
     $this->load->view('includes/footer_web');

@@ -107,6 +107,7 @@ $route['deletesubscriber'] = "Article/deletesubscriber";
 
 $route['aboutus'] = "Home/aboutUs";
 $route['contactus'] = "Home/contactUs";
+$route['sitemap\.xml'] = "Sitemap/index";
 
 
 //

@@ -264,64 +264,217 @@ $CurPageURL = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
               <li class="nav-item dropdown">
                 <!--<a class="dropdown-item dropdown-toggle" href="#">Business Types</a>-->
                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="true">Business Types</a>
-                <ul class="dropdown-menu topic_menu">
-                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=1">Disabled Veteran Businesses</a></li>
-                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=2">Disadvantaged Business Enterprises</a></li>
-                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=3">Emerging Business Enterprises</a></li>
-                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=4">Historically Underutilized Businesses</a></li>
-                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=5">Labor Union Certified Firms</a></li>
-                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=6">LGBTQ Owned Businesses</a></li>
-                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=7">Local Business Enterprises</a></li>
-                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=8">Minority Business Enterprises</a></li>
-                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=9">Minority Women Business Enterprises</a></li>
-                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=10">Small Business Enterprises</a></li>
-                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=11">Tribally Designated Entity</a></li>
-                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=12">Veteran Business</a></li>
-                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=13">Women Business Enterprises</a></li>
+                <ul class="dropdown-menu topic_menu" itemType="http://www.schema.org/SiteNavigationElement" itemscope="Business Types">
+                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=1">Disabled Veteran Businesses</a>
+                    <meta itemProp="name" content="Disabled Veteran Businesses" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=1" />
+                  </li>
+                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=2">Disadvantaged Business Enterprises</a>
+                    <meta itemProp="name" content="Disadvantaged Business Enterprises" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=2" />
+                  </li>
+                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=3">Emerging Business Enterprises</a>
+                    <meta itemProp="name" content="Emerging Business Enterprises" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=3" />
+                  </li>
+                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=4">Historically Underutilized Businesses</a>
+                    <meta itemProp="name" content="Historically Underutilized Businesses" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=4" />
+                  </li>
+                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=5">Labor Union Certified Firms</a>
+                    <meta itemProp="name" content="Labor Union Certified Firms" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=5" />
+                  </li>
+                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=6">LGBTQ Owned Businesses</a>
+                    <meta itemProp="name" content="LGBTQ Owned Businesses" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=6" />
+                  </li>
+                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=7">Local Business Enterprises</a>
+                    <meta itemProp="name" content="Local Business Enterprises" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=7" />
+                  </li>
+                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=8">Minority Business Enterprises</a>
+                    <meta itemProp="name" content="Minority Business Enterprises" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=8" />
+                  </li>
+                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=9">Minority Women Business Enterprises</a>
+                    <meta itemProp="name" content="Minority Women Business Enterprises" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=9" />
+                  </li>
+                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=10">Small Business Enterprises</a>
+                    <meta itemProp="name" content="Small Business Enterprises" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=10" />
+                  </li>
+                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=11">Tribally Designated Entity</a>
+                    <meta itemProp="name" content="Tribally Designated Entity" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=11" />
+                  </li>
+                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=12">Veteran Business</a>
+                    <meta itemProp="name" content="Veteran Business" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=12" />
+                  </li>
+                  <li><a class="dropdown-item" href="<?php echo base_url(); ?>search?category=13">Women Business Enterprises</a>
+                    <meta itemProp="name" content="Women Business Enterprises" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=13" />
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <!--<a class="dropdown-item dropdown-toggle" href="#">Topics</a>-->
                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">Topics</a>
-                <ul class="dropdown-menu topic_menu">
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=41">Airports</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=42">Bridges</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=14">Construction Management Software</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=15">Contractor Trades</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=16">Coronavirus Pandemic</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=17">Cyber Security</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=18">Department of Transportation </a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=19">Disparity Studies</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=20">Diversity Outreach</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=21">Economic Stimulus</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=22">Efficiency-Improving Technology</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=23">Entrepreneurialism</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=24">Federal Government</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=44">Freeways and Highways</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=25">Green Economy</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=26">Green Construction</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=27">Health and Safety</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=43">Housing and Urban Development </a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=28">International</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=29">Investment in Infrastructure</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=30">Labor</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=31">Local Government</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=32">Market Watch</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=33">Material Costs</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=34">Mobile Technology</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=35">Modular & Prefabricated Construction</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=36">Monopolization</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=45">Ports</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=46">Procurement</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=37">Public-Private Partnership</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=47">Public Works</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=48">Railroads</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=38">Small Business Administration</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=49">Schools</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=39">State Government</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=50">Taxes and the IRS</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=40">Tech</a></li>
-                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=51">Treasury Department</a></li>
+                <ul class="dropdown-menu topic_menu" itemType="http://www.schema.org/SiteNavigationElement" itemscope="Topics">
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=41">Airports</a>
+                    <meta itemProp="name" content="Airports" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=41" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=42">Bridges</a>
+                    <meta itemProp="name" content="Bridges" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=42" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=14">Construction Management Software</a>
+                    <meta itemProp="name" content="Construction Management Software" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=14" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=15">Contractor Trades</a>
+                    <meta itemProp="name" content="Contractor Trades" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=15" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=16">Coronavirus Pandemic</a>
+                    <meta itemProp="name" content="Coronavirus Pandemic" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=16" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=17">Cyber Security</a>
+                    <meta itemProp="name" content="Cyber Security" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=17" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=18">Department of Transportation </a>
+                    <meta itemProp="name" content="Department of Transportation " />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=18" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=19">Disparity Studies</a>
+                    <meta itemProp="name" content="Disparity Studies" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=19" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=20">Diversity Outreach</a>
+                    <meta itemProp="name" content="Diversity Outreach" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=20" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=21">Economic Stimulus</a>
+                    <meta itemProp="name" content="Economic Stimulus" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=21" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=22">Efficiency-Improving Technology</a>
+                    <meta itemProp="name" content="Efficiency-Improving Technology" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=22" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=23">Entrepreneurialism</a>
+                    <meta itemProp="name" content="Entrepreneurialism" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=23" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=24">Federal Government</a>
+                    <meta itemProp="name" content="Federal Government" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=24" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=44">Freeways and Highways</a>
+                    <meta itemProp="name" content="Freeways and Highways" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=44" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=25">Green Economy</a>
+                    <meta itemProp="name" content="Green Economy" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=25" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=26">Green Construction</a>
+                    <meta itemProp="name" content="Green Construction" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=26" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=27">Health and Safety</a>
+                    <meta itemProp="name" content="Health and Safety" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=27" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=43">Housing and Urban Development </a>
+                    <meta itemProp="name" content="Housing and Urban Development " />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=43" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=28">International</a>
+                    <meta itemProp="name" content="International" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=28" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=29">Investment in Infrastructure</a>
+                    <meta itemProp="name" content="Investment in Infrastructure" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=29" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=30">Labor</a>
+                    <meta itemProp="name" content="Labor" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=30" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=31">Local Government</a>
+                    <meta itemProp="name" content="Local Government" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=31" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=32">Market Watch</a>
+                    <meta itemProp="name" content="Market Watch" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=32" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=33">Material Costs</a>
+                    <meta itemProp="name" content="Material Costs" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=33" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=34">Mobile Technology</a>
+                    <meta itemProp="name" content="Mobile Technology" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=34" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=35">Modular & Prefabricated Construction</a>
+                    <meta itemProp="name" content="Modular & Prefabricated Construction" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=35" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=36">Monopolization</a>
+                    <meta itemProp="name" content="Monopolization" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=36" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=45">Ports</a>
+                    <meta itemProp="name" content="Ports" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=45" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=46">Procurement</a>
+                    <meta itemProp="name" content="Procurement" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=46" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=37">Public-Private Partnership</a>
+                    <meta itemProp="name" content="Public-Private Partnership" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=37" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=47">Public Works</a>
+                    <meta itemProp="name" content="Public Works" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=47" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=48">Railroads</a>
+                    <meta itemProp="name" content="Railroads" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=48" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=38">Small Business Administration</a>
+                    <meta itemProp="name" content="Small Business Administration" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=38" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=49">Schools</a>
+                    <meta itemProp="name" content="Schools" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=49" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=39">State Government</a>
+                    <meta itemProp="name" content="State Government" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=39" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=50">Taxes and the IRS</a>
+                    <meta itemProp="name" content="Taxes and the IRS" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=50" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=40">Tech</a>
+                    <meta itemProp="name" content="Tech" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=40" />
+                  </li>
+                  <li><a class="dropdown-item pt-0 pb-0" href="<?php echo base_url(); ?>search?category=51">Treasury Department</a>
+                    <meta itemProp="name" content="Treasury Department" />
+                    <meta itemProp="url" content="<?php echo base_url(); ?>search?category=51" />
+                  </li>
                 </ul>
               </li>
               <!--<li class="nav-item dropdown">-->
